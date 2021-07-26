@@ -1115,7 +1115,10 @@ section {
   background: #333333;
   color: #fff;
 }
-
+#recent-story .story a:hover{
+  background: #ff9900;
+  color: #fff;
+}
 #recent-story .img img{
   width: 100%;
 }
