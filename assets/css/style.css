@@ -829,6 +829,7 @@ section {
 }
 
 #expertise .expertise-cols .counters .icon{
+  content: "";
   width: 64px;
   height: 64px;
   text-align: center;
@@ -837,15 +838,43 @@ section {
   border-radius: 50%;
   border: 4px solid #fff;
   left: calc( 50% - 32px);
-  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
   margin: 10px 0 30px 0;
+  transition: all 0.3s ease-in-out;
 }
+#expertise .expertise-cols .counters .icon:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+#expertise .expertise-cols .counters .icon:hover:before{
+  background: #ff9900;
+  border: 4px solid #ff9900;
+  width: 64px;
+  height: 64px;
+  transition: all 0.3s ease-in-out;
+}
+
+
 #expertise .expertise-cols .counters .icon i{
   color: #ff9900;
+  font-weight: 700;
+  font-size: 24px;
+}
+#expertise .expertise-cols .counters .icon i{
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+#expertise .expertise-cols .counters .icon:hover i{
+  color: #fff;
   font-weight: 700;
   font-size: 24px;
 }
