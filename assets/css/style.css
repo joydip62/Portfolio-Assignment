@@ -190,6 +190,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 30px;
   color: #fff;
 }
+@media (max-width: 320px) {
+  right: 25px;
+}
+}
 .navbar .dropdown ul a i:hover{
   color: #fff;
 }
